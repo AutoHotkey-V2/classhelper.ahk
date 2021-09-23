@@ -44,4 +44,4 @@ ExitApp
 
 For usage examples have a look at the files in the *examples* folder.
 
-For more detailed documentation have a look into the [full documentation](https://autohotkey-v2.github.io/callstack.ahk/)
+For more detailed documentation have a look into the [full documentation](https://autohotkey-v2.github.io/classhelper.ahk/)
