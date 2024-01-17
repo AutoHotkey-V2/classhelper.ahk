@@ -1,10 +1,10 @@
-#Requires AutoHotkey v2.0-
+		#Requires AutoHotkey v2.0-
 #warn
 
-#include %A_LineFile%\..\..\JSON.ahk\_JXON.ahk
+#include %A_LineFile%\..\..\cJson.ahk\JSON.ahk
 
 release_version() {
-	return "1.0.0"
+	return "1.1.0"
 }
 
 ; #########################################################
@@ -81,7 +81,7 @@ class ClassHelper {
 	OutputDebug("New obj <c> is an instance of class <" Type(c) "> with property values (x=" c.x ", y=" c.y ")")
 	===
 	*/
-		value := Jxon_Load( &str )
+		value := JSON.Load( str )
 		ct := value["_class"]
 		r :=  ClassHelper.newFromString(ct)
 		For Name  in r.OwnProps() {
@@ -130,7 +130,7 @@ class ClassHelper {
 		}
 		clone["_class"] := type(obj)
 
-		str := Jxon_Dump(clone,indent)
+		str := JSON.Dump(clone,indent)
 
 		return str
 	}

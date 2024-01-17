@@ -1,4 +1,4 @@
-﻿Format: 2.2 (Development Release 3)
+﻿Format: 2.3
 
 # This is a configuration file for a Natural Docs HTML output style.
 
@@ -85,7 +85,7 @@ Home Page: home.html
 # they're needed.
 #
 # The HTML file may contain these strings which will be replaced by your
-# project information.  They will have entity substitutions made for <, >,
+# project information.  They will have entity substitutions made for <, >, &,
 # and " characters so they're safe to place directly in the HTML or inside
 # double-quoted JavaScript strings.
 #

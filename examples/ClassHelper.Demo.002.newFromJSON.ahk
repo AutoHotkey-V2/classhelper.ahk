@@ -1,10 +1,10 @@
 #include %A_ScriptDir%\..\export.ahk
 
-class a{ 
-	class b{ 
+class a{
+	class b{
 		x := 0
 		y := 0
-	} 
+	}
 }
 strJSON := '{"x":42,"y":17,"_class":"a.b"}'
 c := ClassHelper.newFromJSON(strJSON)
